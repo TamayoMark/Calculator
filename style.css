@@ -1,0 +1,102 @@
+html{
+    box-sizing: border-box;
+    user-select: none;
+}
+
+@font-face{
+    /* font-family:'digital-clock-font';
+    src: url('digital-7.ttf'); */
+    font-family:'technology';
+    src: url('Technology.ttf');
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b);
+    color: #333;
+}
+
+#casio {
+    margin: 0 0 5px 5px;
+    font-size: 3rem;
+    color: #585858;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.5), 1px 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+#calculator {
+    font-family: 'technology';
+    width: max-content;
+    max-width: 400px;
+    padding: 20px;
+    background: #585858;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.5), inset -2px -2px 3px rgba(0, 0, 0, 0.5), 10px 10px 3px rgba(0, 0, 0, 0.8);
+}
+
+#display {
+    box-sizing: border-box;
+    width: calc(100% - 35px);
+    margin-bottom: 20px;
+    margin-left: 5px;
+    padding: 10px;
+    background-color: #40b355;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    text-align: right;
+    font-size: 2rem;
+    height: 3.25em;
+    box-shadow: inset 5px 5px 2px rgba(0, 0, 0, 0.5);
+    border-right: 2px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+button {
+    width: 20%;
+    padding: 15px 0;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    font-size: 1.2rem;
+    cursor: pointer;
+    /* transition: background-color 0.3s; */
+    border-right: 2px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: inset 2px 2px 1px rgba(255, 255, 255, 0.5), 3px 3px 3px rgba(0, 0, 0, 0.8);
+}
+
+button:active {
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.5);
+    border-right: 2px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    /* darken using filter*/
+    filter: brightness(0.9);
+}
+
+button.operation {
+    background-color: #fe9241;
+    color: #fff;
+}
+
+button.red {
+    background-color: #fe4741;
+    color: #fff;
+}
+
+button.special-operation {
+    background-color: #353535;
+    color: #fff;
+}
+
+/* button.operation:active {
+    background-color: #d37a36;
+} */
+
+button.span-two {
+    width: calc(40% + 13px);
+}
